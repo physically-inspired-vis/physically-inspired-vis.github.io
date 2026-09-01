@@ -248,31 +248,6 @@ export function OverviewPage({ onTabChange }: { onTabChange?: (tab: string) => v
           </div>
         </Section>
 
-        {/* Explore buttons */}
-        <Section>
-          <SectionTitle>Explore the project</SectionTitle>
-          <div className="flex gap-4 flex-wrap">
-            <button
-              onClick={() => onTabChange?.("design-space")}
-              className="px-6 py-3 bg-zinc-950 hover:bg-zinc-800 text-white rounded-lg text-sm font-medium transition-colors"
-            >
-              Explore the Design Space →
-            </button>
-            <button
-              onClick={() => onTabChange?.("corpus")}
-              className="px-6 py-3 bg-zinc-950 hover:bg-zinc-800 text-white rounded-lg text-sm font-medium transition-colors"
-            >
-              Browse the Corpus →
-            </button>
-            <button
-              onClick={() => onTabChange?.("coding-interface")}
-              className="px-6 py-3 bg-zinc-950 hover:bg-zinc-800 text-white rounded-lg text-sm font-medium transition-colors"
-            >
-              Open Coding Interface →
-            </button>
-          </div>
-        </Section>
-
       </div>
     </div>
   );

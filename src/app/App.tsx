@@ -4,6 +4,8 @@ import { OverviewPage } from "@/app/components/OverviewPage";
 import { DesignSpacePage } from "@/app/components/DesignSpacePage";
 import { CorpusPage } from "@/app/components/CorpusPage";
 import { CodingInterfacePage } from "@/app/components/CodingInterfacePage";
+import { ProbesPage } from "@/app/components/ProbesPage";
+import { StudyPage } from "@/app/components/StudyPage";
 import { InspirationSetPage } from "@/app/components/InspirationSetPage";
 import { InspirationLibraryPage } from "@/app/components/InspirationLibraryPage";
 import { AboutPage } from "@/app/components/AboutPage";
@@ -24,10 +26,14 @@ export default function App() {
         return <DesignSpacePage />;
       case "corpus":
         return <CorpusPage />;
-      case "inspiration-library":
-        return <InspirationLibraryPage />;
       case "coding-interface":
         return <CodingInterfacePage />;
+      case "probes":
+        return <ProbesPage />;
+      case "study":
+        return <StudyPage />;
+      case "inspiration-library":
+        return <InspirationLibraryPage />;
       case "inspiration-set":
         return <InspirationSetPage />;
       case "about":

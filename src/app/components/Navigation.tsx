@@ -9,8 +9,10 @@ const tabs = [
   { id: "overview", label: "Overview" },
   { id: "design-space", label: "Design Space" },
   { id: "corpus", label: "Corpus" },
-  { id: "inspiration-library", label: "Inspiration Library" },
   { id: "coding-interface", label: "Coding" },
+  { id: "probes", label: "Probes" },
+  { id: "study", label: "Study" },
+  { id: "inspiration-library", label: "Inspiration Library" },
   // { id: "inspiration-set", label: "Inspiration Set" },
   // { id: "about", label: "Resources" },
 ];
