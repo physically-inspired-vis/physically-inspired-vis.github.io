@@ -8,7 +8,7 @@ const withBase = (relPath: string) => {
 // Participant numbering has gaps - these are the sessions with a result.
 const participants = [
   "P1", "P2", "P3", "P4", "P5", "P6",
-  "P7", "P8", "P9", "P10", "P12", "P14",
+  "P7", "P8", "P9", "P10", "P11", "P12", "P14",
 ];
 
 export function StudyPage() {
@@ -18,7 +18,7 @@ export function StudyPage() {
         Study
       </h2>
       <p className="text-base text-muted-foreground leading-relaxed">
-        Visualizations produced by participants during the study.
+        Visualization concepts produced by participants during the study.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
