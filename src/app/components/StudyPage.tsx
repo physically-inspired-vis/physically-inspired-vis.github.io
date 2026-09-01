@@ -37,12 +37,11 @@ export function StudyPage() {
         {participants.map((p) => {
           const open = openId === p;
           return (
-            <figure
-              key={p}
-              className={`flex flex-col gap-2 ${open ? "sm:col-span-2 lg:col-span-3" : ""}`}
-            >
+            <figure key={p} className="flex flex-col gap-2">
               {open ? (
-                <div className="rounded-lg overflow-hidden border border-border bg-muted h-[70vh] min-h-[420px]">
+                // Same box as the still it replaces, so opening a scene never
+                // reflows the grid around it.
+                <div className="rounded-lg overflow-hidden border border-foreground bg-muted aspect-[4/3]">
                   <iframe
                     src={sceneUrl(p, false)}
                     title={`Scene by participant ${p}`}
