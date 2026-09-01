@@ -9,8 +9,9 @@ const withBase = (relPath: string) => {
 
 // The live scene opens in VisArmature, which is a separate app on this origin;
 // it reads the scene from ?scene= and renders it with the real 3D pipeline.
-const viewerUrl = (participant: string) =>
-  `${withBase("visarmature/")}?scene=${encodeURIComponent(withBase(`study JSONs/${participant}.json`))}`;
+const sceneUrl = (participant: string, chrome: boolean) =>
+  `${withBase("visarmature/")}?scene=${encodeURIComponent(withBase(`study JSONs/${participant}.json`))}` +
+  (chrome ? "" : "&viewer=1");
 
 // Participant numbering has gaps - these are the sessions with a result.
 const participants = [
@@ -43,7 +44,7 @@ export function StudyPage() {
               {open ? (
                 <div className="rounded-lg overflow-hidden border border-border bg-muted h-[70vh] min-h-[420px]">
                   <iframe
-                    src={viewerUrl(p)}
+                    src={sceneUrl(p, false)}
                     title={`Scene by participant ${p}`}
                     className="w-full h-full border-0"
                     allow="fullscreen"
@@ -76,7 +77,7 @@ export function StudyPage() {
                       Close
                     </button>
                     <a
-                      href={viewerUrl(p)}
+                      href={sceneUrl(p, true)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-foreground hover:underline"
