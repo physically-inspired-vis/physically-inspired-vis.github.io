@@ -68,7 +68,7 @@ export function CodingInterfacePage() {
           rel="noopener noreferrer"
           className="self-center px-8 py-4 bg-zinc-950 hover:bg-zinc-800 text-white rounded-lg text-base font-medium transition-colors"
         >
-          Open Coding Interface ↗
+          Open Coding Interface →
         </a>
         <div className="rounded-lg overflow-hidden shadow-lg">
           <img
