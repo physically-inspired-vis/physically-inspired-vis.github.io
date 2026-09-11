@@ -1,0 +1,888 @@
+{
+  "schema_version": 1,
+  "categories": [
+    {
+      "category": "Visual Elements",
+      "order": 1,
+      "dimensions": [
+        {
+          "id": "element-type",
+          "label": "Element Types",
+          "description": "The type of the visual element.",
+          "color": "#f06951",
+          "icon": "icons/element.png",
+          "order": 1,
+          "cards": [
+            {
+              "id": "mark",
+              "title": "Mark",
+              "description": "A mark represents a data point or unit of data through its visual properties, or contributes to a higher-level encoding when grouped into a collection. Marks occupy the lowest hierarchy level (level 1).",
+              "details": [],
+              "image": "design_space_static/mark.png",
+              "example": "ex-013",
+              "order": 1
+            },
+            {
+              "id": "collection",
+              "title": "Collection",
+              "description": "A collection is a grouping of marks or nested collections that encodes data. Collections support higher-level encodings and can appear at hierarchy levels 2, 3, ... depending on how many levels of grouping are present.\r\n\r\n    Collections may arise through; repetition of a data element, division of a data element into parts, or more general grouping/aggregation techniques.",
+              "details": [],
+              "image": "design_space_static/collection.png",
+              "example": "ex-005",
+              "order": 2
+            },
+            {
+              "id": "annotation",
+              "title": "Annotation",
+              "description": "An annotation is a supportive visual element that explicitly attaches to a target element in order to explain, emphasize, or direct attention to it. Annotations do not encode data themselves, but they help viewers interpret the encodings. Annotations may take the form of shapes, highlights, pointers, or image-based additions. Textual annotations are out of scope in this scheme.",
+              "details": [],
+              "example": "ex-084",
+              "order": 3
+            },
+            {
+              "id": "guide",
+              "title": "Guide",
+              "description": "A guide is a supportive visual element that helps viewers interpret the scale, magnitude, or meaning of a data encoding. Guides do not encode data themselves, but provide reference by comparison. Examples include: axes, legends, unit references, or recognizable comparison objects such as buildings, silhouettes, or containers. Use Guide when the element helps the viewer read or estimate values, sizes, or categories.",
+              "details": [],
+              "image": "design_space_static/guide.png",
+              "example": "ex-010",
+              "order": 4
+            },
+            {
+              "id": "decoration",
+              "title": "Decoration",
+              "description": "A decoration is a supportive visual element that contributes to the interpretation of the broader context, theme, or message of the visualization without directly helping viewers read the data values or scale. Decorations do not attach to a specific target. A decoration may reinforce atmosphere, theme, or narrative, and may incorporate physically-inspired cues, but could be removed without changing the basic interpretation of the representation or its scale.",
+              "details": [],
+              "example": "ex-015",
+              "order": 5
+            },
+            {
+              "id": "scene",
+              "title": "Scene",
+              "description": "The scene captures the global framing of the visualization. It includes properties such as environment, viewpoint, lighting, background, and atmosphere that shape how all other elements are perceived.\r\n    Unlike conventional visualizations with abstract backgrounds, physically-inspired visualizations often place elements within more familiar or coherent environments.",
+              "details": [],
+              "image": "design_space_static/scene.png",
+              "example": "ex-081",
+              "order": 6
+            }
+          ]
+        },
+        {
+          "id": "element-hierarchy",
+          "label": "Element Hierarchy",
+          "description": "The element’s structural level within the visualization’s composition, based on what it belongs to. Levels increase as you move from individual items to nested groups.",
+          "color": "#f06951",
+          "icon": "icons/hierarchy.png",
+          "order": 2,
+          "cards": [
+            {
+              "id": "level-1",
+              "title": "Level 1",
+              "description": "Individual Marks (atomic items/links)",
+              "details": [
+                "Atomic level elements",
+                "Individual marks",
+                "Base building blocks"
+              ],
+              "order": 1
+            },
+            {
+              "id": "level-2",
+              "title": "Level 2",
+              "description": "A Collection of Level-1 items (first grouping)",
+              "details": [
+                "First grouping of marks",
+                "Collection of atomic elements",
+                "Creates initial hierarchy"
+              ],
+              "order": 2
+            },
+            {
+              "id": "level-3-5",
+              "title": "Level 3-5",
+              "description": "Nested groupings (Collection of Collections, etc.)",
+              "details": [
+                "Multiple levels of nesting",
+                "Collections of collections",
+                "Complex hierarchical structures"
+              ],
+              "order": 3
+            },
+            {
+              "id": "no-hierarchy",
+              "title": "No Hierarchy",
+              "description": "Element applies to the entire visualization (e.g., global background)",
+              "details": [
+                "Applies globally",
+                "No specific level assignment",
+                "Whole-scene elements"
+              ],
+              "order": 4
+            }
+          ]
+        },
+        {
+          "id": "visual-realism",
+          "label": "Visual Realism",
+          "description": "Visual realism captures the degree to which a visual element’s appearance and, when applicable, behavior evoke the perceptual impression of a real-world entity or phenomenon. \r\nThis impression may arise from rendering cues such as material detail, texture, shadows, depth, and coherent lighting, as well as from motion that appears physically plausible. In this framework, realism is assessed at the level of individual visual elements, since physically-inspired visualizations often combine elements with different degrees of realism within the same scene. For dynamic visualizations, evaluate not only static appearance but also the extent to which the element’s movement matches viewers’ expectations of physical behavior.",
+          "color": "#f06951",
+          "icon": "icons/realism.png",
+          "order": 3,
+          "cards": [
+            {
+              "id": "low-realism",
+              "title": "Low (Highly Stylized)",
+              "description": "The element is highly stylized, with little attempt to imitate real-world optics or physics. It may use simplified shapes, flat colors, or abstract rendering, and if animated, its motion does not strongly appear physically plausible.",
+              "details": [],
+              "example": "ex-014",
+              "order": 1
+            },
+            {
+              "id": "intermediate-realism",
+              "title": "Intermediate (Mixed Realism)",
+              "description": "The element combines realistic and stylized cues. It may include some depth, shading, texture, or plausible motion, but these are mixed with more simplified or abstract visual qualities.",
+              "details": [],
+              "example": "ex-032",
+              "order": 2
+            },
+            {
+              "id": "high-realism",
+              "title": "High (Visually Realistic)",
+              "description": "The element strongly evokes physical reality through detailed rendering and/or physically plausible behavior. Typical cues include rich material appearance, coherent lighting, shadows, depth, and motion that appears believable in physical terms. Photographs of physical artifacts also belong to this category.",
+              "details": [],
+              "example": "ex-076",
+              "order": 3
+            }
+          ]
+        },
+        {
+          "id": "real-world-familiarity",
+          "label": "Real-World Familiarity",
+          "description": "Real-world familiarity captures how clearly a visual element depicts a recognizable real-world entity in a way that aligns with viewers’ everyday knowledge and experience.\r\nWhereas visual realism concerns how convincingly an element looks or behaves, real-world familiarity concerns how familiar the depicted entity itself is. This dimension reflects whether viewers can readily identify what is shown and anticipate its typical perceptual or action affordances—for example, how it might feel, behave, or be handled.",
+          "color": "#f06951",
+          "icon": "icons/reality.png",
+          "order": 4,
+          "cards": [
+            {
+              "id": "low-proximity-slightly-familiar",
+              "title": "Low (Mostly Unfamiliar)",
+              "description": "The visual element is only slightly familiar / feels more abstract or unfamiliar.",
+              "details": [],
+              "example": "ex-038",
+              "order": 1
+            },
+            {
+              "id": "intermediate-proximity-moderately-familiar",
+              "title": "Intermediate (Slightly Familiar)",
+              "description": "The element suggests a recognizable real-world entity or category, but remains simplified, stylized, or somewhat ambiguous. Viewers may identify it, but the expected affordances are only partially conveyed or may vary across viewers.",
+              "details": [],
+              "example": "ex-071",
+              "order": 2
+            },
+            {
+              "id": "high-proximity-very-familiar",
+              "title": "High (Quite Familiar)",
+              "description": "The element clearly depicts a familiar real-world entity that most viewers can identify quickly and consistently. It evokes a strong shared sense of its typical perceptual and action affordances.",
+              "details": [],
+              "example": "ex-009",
+              "order": 3
+            }
+          ]
+        },
+        {
+          "id": "metaphorical-proximity-to-data",
+          "label": "Metaphorical Proximity to Data",
+          "description": "Metaphorical proximity to data captures how closely a visual element relates to the data variable or theme it represents. This dimension describes the semantic distance between what is depicted and what is communicated. It draws on semiotic distinctions between symbolic, iconic, and literal/indexical relations, and captures how directly a representation’s visual form relates to the underlying data or theme.\r\nThis dimension is independent of how realistically an element is rendered and how familiar it is as an object. A visual element may therefore be highly familiar or highly realistic, yet still only loosely connected to the data.",
+          "color": "#f06951",
+          "icon": "icons/data.png",
+          "order": 5,
+          "cards": [
+            {
+              "id": "low-proximity-symbolic",
+              "title": "Low Proximity (Symbolic)",
+              "description": "The visual element does not resemble the data variable or theme, and the connection must be learned through convention or external explanation. Use this when the relation between depiction and data is arbitrary or abstract.",
+              "details": [],
+              "example": "ex-025",
+              "order": 1
+            },
+            {
+              "id": "intermediate-proximity-iconic",
+              "title": "Intermediate Proximity (Iconic)",
+              "description": "The visual element shares some salient qualities with the associated data variable or theme in an intuitive way, even if it is not literally the same thing.",
+              "details": [],
+              "example": "ex-039",
+              "order": 2
+            },
+            {
+              "id": "high-proximity-literal",
+              "title": "High Proximity (Literal)",
+              "description": "The visual element is closely connected to the data variable or theme through physical, causal, or direct similarity.",
+              "details": [],
+              "example": "ex-086",
+              "order": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Physical Attributes",
+      "order": 2,
+      "dimensions": [
+        {
+          "id": "spatial-attributes",
+          "label": "Spatial Attributes",
+          "description": "Spatial attributes capture position, orientation, and size. These channels are well established in visualization, but in physically-inspired visualization they can also evoke physical conditions and be realized through diverse physical processes.",
+          "color": "#3f4adb",
+          "icon": "icons/spatial.png",
+          "order": 1,
+          "cards": [
+            {
+              "id": "position",
+              "title": "Position",
+              "description": "The object’s location within the composition or scene.",
+              "details": [],
+              "image": "design_space_static/position.jpg",
+              "example": "ex-007",
+              "order": 1
+            },
+            {
+              "id": "orientation",
+              "title": "Orientation",
+              "description": "The angular rotation or facing direction of an object.",
+              "details": [],
+              "image": "design_space_static/rotation.jpg",
+              "example": "ex-089",
+              "order": 2
+            },
+            {
+              "id": "size",
+              "title": "Size",
+              "description": "The size of an object, including length, surface extent, or volume.",
+              "details": [],
+              "image": "design_space_static/size.jpg",
+              "example": "ex-077",
+              "order": 3
+            }
+          ]
+        },
+        {
+          "id": "geometry-attributes",
+          "label": "Geometry Attributes",
+          "description": "Geometry attributes describe a visual element’s overall shape and surface form. They range from recognizable real-world forms to abstract ones, and may also include localized deformations such as bumps, folds, or extrusions.",
+          "color": "#3f4adb",
+          "icon": "icons/shape.png",
+          "order": 2,
+          "cards": [
+            {
+              "id": "shape",
+              "title": "Shape",
+              "description": "The element’s overall shape. It may be a recognizable shape (e.g., a star or a hand) or an abstract one.",
+              "details": [],
+              "image": "design_space_static/shape.jpg",
+              "example": "ex-002",
+              "order": 1
+            },
+            {
+              "id": "surface",
+              "title": "Surface",
+              "description": "Localized surface variation or deformation, such as bumps, folds, indentations, or extrusions.",
+              "details": [],
+              "image": "design_space_static/surface.jpg",
+              "example": "ex-036",
+              "order": 2
+            }
+          ]
+        },
+        {
+          "id": "material-attributes",
+          "label": "Material Attributes",
+          "description": "Material attributes describe the substance an element appears to be made of. This category extends appearance-based channels such as color, texture, and opacity by treating them not only as abstract visual variables, but also as cues to material identity and material change. Material attributes can therefore range from simple material assignments to more complex transformations that suggest physical processes such as charring, contamination, heating, or decay.",
+          "color": "#3f4adb",
+          "icon": "icons/material.png",
+          "order": 3,
+          "cards": [
+            {
+              "id": "simple-materials",
+              "title": "Simple Materials",
+              "description": "Clearly separated materials applied to different objects or regions, often to mark different categories or roles.",
+              "details": [],
+              "image": "design_space_static/material.jpg",
+              "example": "ex-031",
+              "order": 1
+            },
+            {
+              "id": "material-transformations",
+              "title": "Material Transformations",
+              "description": "From isolated material changes, such as in color or reflectance, to more complex changes that communicate physical processes, such as burning, decay, melting, or oxidation.",
+              "details": [],
+              "image": "design_space_static/material_transformation.jpg",
+              "example": "ex-043",
+              "order": 2
+            }
+          ]
+        },
+        {
+          "id": "structural-attributes",
+          "label": "Structural Attributes",
+          "description": "Structural attributes describe deformations and physical manipulations that alter an element’s form. They are used when the visible effect suggests a force or process acting on an existing form, rather than the form being treated as the element’s inherent shape.",
+          "color": "#3f4adb",
+          "icon": "icons/structural.png",
+          "order": 4,
+          "cards": [
+            {
+              "id": "stretching",
+              "title": "Stretching",
+              "description": "The form is elongated or pulled along one or more directions.",
+              "details": [],
+              "image": "design_space_static/stretch.jpg",
+              "example": "ex-029",
+              "order": 1
+            },
+            {
+              "id": "twist",
+              "title": "Twist",
+              "description": "The form is rotated along its own axis, creating torsion.",
+              "details": [],
+              "image": "design_space_static/twist.jpg",
+              "order": 2
+            },
+            {
+              "id": "break-shatter",
+              "title": "Break / Shatter",
+              "description": "The form fractures into separate pieces or visibly cracks apart.",
+              "details": [],
+              "image": "design_space_static/shatter.png",
+              "video": "videos/shatter.gif",
+              "example": "ex-030",
+              "order": 3
+            },
+            {
+              "id": "fold-unfold",
+              "title": "Fold / Unfold",
+              "description": "The form is bent into or out of layered, creased, or collapsed configurations.",
+              "details": [],
+              "image": "design_space_static/fold.png",
+              "video": "videos/fold.gif",
+              "example": "ex-023",
+              "order": 999
+            },
+            {
+              "id": "inflate-deflate",
+              "title": "Inflate / Deflate",
+              "description": "The form expands or contracts as if filled with or losing internal pressure.",
+              "details": [],
+              "image": "design_space_static/inflate.jpg",
+              "order": 999
+            },
+            {
+              "id": "segment-cut",
+              "title": "Segment / Cut",
+              "description": "The form is divided into parts through slicing, cutting, or segmentation.",
+              "details": [],
+              "image": "design_space_static/cut.jpg",
+              "example": "ex-004",
+              "order": 999
+            }
+          ]
+        },
+        {
+          "id": "groups-and-populations",
+          "label": "Groups & Populations",
+          "description": "Group and population attributes describe how multiple elements are repeated, distributed, and organized in space. They apply mainly to collections rather than individual marks. These attributes are especially relevant in unit visualizations, where data is encoded through the accumulation and distribution of discrete objects. In physically-inspired visualization, group organization often carries a stronger sense of physical structure and can suggest movement, accumulation, or environmental conditions.",
+          "color": "#3f4adb",
+          "icon": "icons/populations.png",
+          "order": 5,
+          "cards": [
+            {
+              "id": "count",
+              "title": "Count",
+              "description": "The group and population focus is on the number of repeated elements.",
+              "details": [],
+              "image": "design_space_static/count.jpg",
+              "example": "ex-073",
+              "order": 1
+            },
+            {
+              "id": "density",
+              "title": "Density",
+              "description": "The group and population  focus is on how closely elements are packed or dispersed.",
+              "details": [],
+              "image": "design_space_static/density.jpg",
+              "example": "ex-086",
+              "order": 2
+            },
+            {
+              "id": "adjacent_placement",
+              "title": "Adjacent Placement",
+              "description": "Elements are placed next to one another in close proximity without necessarily overlapping or forming a larger pile.",
+              "details": [],
+              "image": "spatial_arrangement/adjacent_placement.jpg",
+              "example": "ex-020",
+              "order": 999
+            },
+            {
+              "id": "alignment",
+              "title": "Alignment",
+              "description": "Elements are arranged along a common axis or direction, creating an ordered linear structure.",
+              "details": [],
+              "image": "spatial_arrangement/alignment.jpg",
+              "example": "ex-027",
+              "order": 999
+            },
+            {
+              "id": "bonding",
+              "title": "Bonding",
+              "description": "Elements are visually connected or attached to one another, suggesting cohesion or combination into a larger structure.",
+              "details": [],
+              "image": "spatial_arrangement/bonding.jpg",
+              "example": "ex-064",
+              "order": 999
+            },
+            {
+              "id": "branching",
+              "title": "Branching",
+              "description": "Elements extend outward through a tree-like or radiating structure with diverging paths or offshoots.",
+              "details": [],
+              "image": "spatial_arrangement/branching.jpg",
+              "example": "ex-056",
+              "order": 999
+            },
+            {
+              "id": "clustering",
+              "title": "Clustering",
+              "description": "Elements gather into concentrated groups around one or more focal areas.",
+              "details": [],
+              "image": "spatial_arrangement/clustering.jpg",
+              "example": "ex-005",
+              "order": 999
+            },
+            {
+              "id": "geographical_placement",
+              "title": "Geographical Placement",
+              "description": "Elements are positioned according to geographic location or a map-based spatial reference.",
+              "details": [],
+              "image": "spatial_arrangement/geographical_placement.jpg",
+              "example": "ex-058",
+              "order": 999
+            },
+            {
+              "id": "packing",
+              "title": "Packing",
+              "description": "Elements fill a bounded area efficiently, typically with little unused space and minimal overlap.",
+              "details": [],
+              "image": "spatial_arrangement/packing.jpg",
+              "example": "ex-055",
+              "order": 999
+            },
+            {
+              "id": "piling",
+              "title": "Piling",
+              "description": "Elements accumulate into a heap or mound, suggesting gravity-driven gathering or loose aggregation.",
+              "details": [],
+              "image": "spatial_arrangement/piling.jpg",
+              "example": "ex-049",
+              "order": 999
+            },
+            {
+              "id": "scattering",
+              "title": "Scattering",
+              "description": "Elements are dispersed across space in a loose or irregular distribution.",
+              "details": [],
+              "image": "spatial_arrangement/scattering.jpg",
+              "example": "ex-080",
+              "order": 999
+            },
+            {
+              "id": "stacking",
+              "title": "Stacking",
+              "description": "Elements are layered vertically or horizontally so that they build on top of or against one another.",
+              "details": [],
+              "image": "spatial_arrangement/stacking.jpg",
+              "example": "ex-010",
+              "order": 999
+            },
+            {
+              "id": "topological_placement",
+              "title": "Topological Placement",
+              "description": "Elements are positioned according to relational or network structure rather than metric distance alone.",
+              "details": [],
+              "image": "spatial_arrangement/topological_placement.jpg",
+              "example": "ex-087",
+              "order": 999
+            },
+            {
+              "id": "trajectory",
+              "title": "Trajectory",
+              "description": "Elements are arranged along a directional path that suggests movement or travel through space.",
+              "details": [],
+              "image": "spatial_arrangement/trajectory.jpg",
+              "example": "ex-052",
+              "order": 999
+            }
+          ]
+        },
+        {
+          "id": "framing-attributes",
+          "label": "Framing Attributes",
+          "description": "Framing attributes describe the compositional choices that shape how physical cues are perceived. They include lighting, camera, and environment, and operate at the level of presentation rather than object form. These attributes help establish the broader spatial and atmospheric context in which the data is read.",
+          "color": "#3f4adb",
+          "icon": "icons/framing.png",
+          "order": 6,
+          "cards": [
+            {
+              "id": "lighting",
+              "title": "Lighting",
+              "description": "Lighting conditions, intensity, direction, mood, or atmospheric effects.",
+              "details": [],
+              "example": "ex-077",
+              "order": 1
+            },
+            {
+              "id": "camera",
+              "title": "Camera",
+              "description": "Viewpoint, angle, framing, or other camera-related choices that affect perceived scale and depth.",
+              "details": [],
+              "example": "ex-060",
+              "order": 2
+            },
+            {
+              "id": "environment",
+              "title": "Environment",
+              "description": "The broader spatial or contextual setting in which the elements are situated.",
+              "details": [],
+              "example": "ex-076",
+              "order": 3
+            }
+          ]
+        },
+        {
+          "id": "time-attributes",
+          "label": "Time Attributes",
+          "description": "Time attributes capture temporal qualities and are especially relevant in dynamic visualizations. Timeis treated as a way of expressing physically-inspired effects and dynamic processes.",
+          "color": "#3f4adb",
+          "icon": "icons/progression.png",
+          "order": 7,
+          "cards": [
+            {
+              "id": "progression",
+              "title": "Progression",
+              "description": "The sequencing or unfolding of change over time.",
+              "details": [],
+              "example": "ex-072",
+              "order": 1
+            },
+            {
+              "id": "speed",
+              "title": "Speed",
+              "description": "The rate of change or movement.",
+              "details": [],
+              "example": "ex-087",
+              "order": 2
+            },
+            {
+              "id": "rhythm",
+              "title": "Rhythm",
+              "description": "Periodic or repeated temporal patterns.",
+              "details": [],
+              "example": "ex-075",
+              "order": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Attribute Dimensions",
+      "order": 3,
+      "dimensions": [
+        {
+          "id": "attribute-function",
+          "label": "Attribute Function",
+          "description": "The attribute function specifies the primary role a physical attribute plays in the visualization. Physical attributes either encode data or provide context. Data-encoding attributes map to data variables. Contextual attributes support interpretation, realism, or narration without encoding values. An encoding attribute may also serve a contextual role when its physically-inspired cues are meaningfully related to the data theme.",
+          "color": "#6D451A",
+          "icon": "icons/function.png",
+          "order": 1,
+          "cards": [
+            {
+              "id": "data-encoding-attirbute",
+              "title": "Data-Encoding Attirbute",
+              "description": "The attribute’s value maps to a data variable. As a secondary purpose the attribute may also provide context in the same way as a contextual attribute does.",
+              "details": [],
+              "order": 1
+            },
+            {
+              "id": "contextual-attribute",
+              "title": "Contextual Attribute",
+              "description": "The attribute does not map to data; its primary purpose is to provide context, theme, realism, or narrative tone. Functionally equivalent to Decoration, but embedded within another element.",
+              "details": [],
+              "order": 2
+            }
+          ]
+        },
+        {
+          "id": "temporality",
+          "label": "Temporality",
+          "description": "Physical attributes may be static or dynamic. Even in dynamic visualizations, some attributes may remain fixed while others change over time. Temporality can change how an attribute is interpreted—for example, position becomes translation and orientation becomes rotation—while some attributes directly depict processes such as breaking or burning. Such processes can also be suggested in static images through progressive states.",
+          "color": "#6D451A",
+          "icon": "icons/motion.png",
+          "order": 2,
+          "cards": [
+            {
+              "id": "static",
+              "title": "Static",
+              "description": "The physical attribute is static.",
+              "details": [],
+              "order": 1
+            },
+            {
+              "id": "dynamic",
+              "title": "Dynamic",
+              "description": "The physical attribute is dynamic.",
+              "details": [],
+              "order": 2
+            }
+          ]
+        },
+        {
+          "id": "semantic-congruence",
+          "label": "Semantic Congruence",
+          "description": "Semantic congruence describes how directly the physical meaning of a data-encoding attribute supports interpretation of the data variable it represents. It captures how naturally a physical cue aligns with the meaning of the data, rather than how efficiently exact values can be read. Congruence is strong when a physical cue suggests a readily understandable mapping—for example, using size to encode quantity or cracks to encode structural damage. It is weak when the mapping feels physically arbitrary or requires substantial inference—for example, using material color to encode an unrelated categorical variable.",
+          "color": "#6D451A",
+          "icon": "icons/congruence.png",
+          "order": 3,
+          "cards": [
+            {
+              "id": "weak-congruence",
+              "title": "Weak Congruence",
+              "description": "The physical cue has a weak semantic connection to the data variable. The mapping feels\r\narbitrary, conventional, or requires substantial inference.",
+              "details": [],
+              "order": 1
+            },
+            {
+              "id": "intermediate-congruence",
+              "title": "Intermediate Congruence",
+              "description": "The physical cue has a partially meaningful relation to the data variable, but the mapping is\r\nnot immediately or strongly interpretable.",
+              "details": [],
+              "order": 2
+            },
+            {
+              "id": "strong-congruence",
+              "title": "Strong Congruence",
+              "description": "The physical cue has a strong semantic connection to the data variable and suggests an\r\nintuitive physical rationale for the mapping.",
+              "details": [],
+              "order": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Physical Mechanisms",
+      "order": 4,
+      "dimensions": [
+        {
+          "id": "biological-mechanisms",
+          "label": "Biological Mechanisms",
+          "description": "Biological mechanisms are used when the attribute appears to arise from living bodies or biological processes.",
+          "color": "#436d41",
+          "icon": "icons/biological.png",
+          "order": 1,
+          "cards": [
+            {
+              "id": "growth",
+              "title": "Growth",
+              "description": "Structures that emerge, enlarge, branch, or differentiate over time, often following developmental rules.\r\nExamples: blooming flowers, branching trees or corals, cell division.",
+              "details": [],
+              "image": "design_space_static/growth.png",
+              "video": "videos/growth.gif",
+              "example": "ex-067",
+              "mechanism_creator": "@superdesigners.co",
+              "mechanism_creator_link": "https://www.instagram.com/superdesigners.co/?g=5",
+              "order": 1
+            },
+            {
+              "id": "decay",
+              "title": "Decay",
+              "description": "Degradation caused by breakdown, death, or deterioration of living matter.\r\nExamples: rotting, biodegradation, wrinkling, decomposition.",
+              "details": [],
+              "video": "videos/decay.mp4",
+              "example": "ex-021",
+              "mechanism_creator": "@vfx_media",
+              "mechanism_creator_link": "https://www.instagram.com/vfx_media/",
+              "order": 2
+            },
+            {
+              "id": "living-movement",
+              "title": "Living Movement",
+              "description": "Movement caused by internal, biological processes.",
+              "details": [],
+              "video": "videos/movement.mp4",
+              "example": "ex-076",
+              "mechanism_creator": "@aiaskokkalis",
+              "mechanism_creator_link": "https://www.instagram.com/aiaskokkalis/",
+              "order": 3
+            },
+            {
+              "id": "respiration-rhythms",
+              "title": "Respiration & Rhythms",
+              "description": "Periodic, life-like oscillations that convey internal cycles of living systems.\r\nExamples: “breathing”, pulse/heartbeat dilations, tremor or “shaking”, bioluminescent\r\npulsing.",
+              "details": [],
+              "video": "videos/rhythms.mp4",
+              "example": "ex-075",
+              "mechanism_creator": "@split_vzn",
+              "mechanism_creator_link": "https://www.instagram.com/split_vzn/",
+              "order": 4
+            },
+            {
+              "id": "infection",
+              "title": "Infection",
+              "description": "Spread of living agents across an object or host.\r\nExamples: mold / mycelium, bacterial growth on a surface, moss / lichen.",
+              "details": [],
+              "image": "design_space_static/infection.png",
+              "video": "videos/infection.mp4",
+              "example": "ex-018",
+              "mechanism_creator": "@lucasmagdaleni",
+              "mechanism_creator_link": "https://www.instagram.com/lucasmagdaleni/",
+              "order": 5
+            },
+            {
+              "id": "self-organization-patterns",
+              "title": "Self-Organization & Patterns",
+              "description": "Pattern formation or coordinated behavior arising from local interactions among many simple\r\nunits, without centralized control.\r\nExamples: flocking / swarming, Turing patterns, phyllotaxis packing.",
+              "details": [],
+              "video": "videos/patterns.mp4",
+              "example": "ex-056",
+              "mechanism_creator": "@stephanhelbing",
+              "mechanism_creator_link": "https://www.instagram.com/stephanhelbing/",
+              "order": 6
+            },
+            {
+              "id": "life-cycle-events",
+              "title": "Life-Cycle Events",
+              "description": "Biological stage transitions that change appearance, structure, or function. Examples: germination, metamorphosis, flowering / fruiting / seeding.",
+              "details": [],
+              "video": "videos/life_cycle.mp4",
+              "example": "ex-090",
+              "mechanism_creator": "@zachdarren",
+              "mechanism_creator_link": "https://www.instagram.com/zachdarren/",
+              "order": 7
+            }
+          ]
+        },
+        {
+          "id": "physics-chemical-mechanisms",
+          "label": "Physics & Chemical Mechanisms",
+          "description": "Physics-based and chemical mechanisms are used when the attribute appears to be produced by physical or chemical phenomena.",
+          "color": "#436d41",
+          "icon": "icons/physics.png",
+          "order": 2,
+          "cards": [
+            {
+              "id": "rigid-body-mechanics",
+              "title": "Rigid-Body Mechanics",
+              "description": "Motion of bodies treated as undeformable solids under forces, constraints, and collisions. The\r\nshape of the object remains essentially unchanged; the focus is on translation and rotation.\r\nExamples: gravity-driven fall, bouncing balls, projectile motion, rigid collisions, stacking\r\nand toppling, sliding or rolling without visible squish.",
+              "details": [],
+              "image": "design_space_static/rigid.png",
+              "video": "videos/rigid.gif",
+              "example": "ex-055",
+              "mechanism_creator": "@benfryc_art",
+              "mechanism_creator_link": "https://www.instagram.com/benfryc_art/?g=5",
+              "order": 1
+            },
+            {
+              "id": "deformable-solid-mechanics",
+              "title": "Deformable Solid Mechanics",
+              "description": "Shape changes and fracture of solids under stress, including elastic and plastic deformation.\r\nThe focus is on how the material bends, stretches, compresses, twists, cracks, tears, or breaks\r\nin response to loads or impacts.\r\nExamples: twisting or bending beams, stretching or squashing objects, compression, plastic\r\ndeformation, tearing, cutting, cracking and fracture.",
+              "details": [],
+              "image": "design_space_static/deformable.png",
+              "video": "videos/deformable.gif",
+              "example": "ex-091",
+              "mechanism_creator": "@vincentschwenk",
+              "mechanism_creator_link": "https://www.instagram.com/vincentschwenk/",
+              "order": 2
+            },
+            {
+              "id": "fluids",
+              "title": "Fluids",
+              "description": "Phenomena related to liquid and gaseous flows, including diffusion and mixing phenomena.\r\nExamples: ripples, droplets, mixing of liquids, flow, turbulence, vortices, jets.",
+              "details": [],
+              "image": "design_space_static/fluids.png",
+              "video": "videos/fluids.gif",
+              "example": "ex-069",
+              "mechanism_creator": "@daytogu",
+              "mechanism_creator_link": "https://www.instagram.com/daytogu/",
+              "order": 3
+            },
+            {
+              "id": "burning-smoke",
+              "title": "Burning & Smoke",
+              "description": "Oxidation-driven emission and transformation of matter producing flames or smoke.\r\nExamples: smoke, burning, fire, explosion, heat.",
+              "details": [],
+              "video": "videos/fire.mp4",
+              "mechanism_creator": "@vacades",
+              "mechanism_creator_link": "https://www.instagram.com/vacades/?g=5",
+              "order": 4
+            },
+            {
+              "id": "state-change",
+              "title": "State Change",
+              "description": "Appearance and shape changes caused by heat transfer, temperature gradients, and transformations between phases.\r\nExamples: melting, freezing, evaporation, steam, frosting.",
+              "details": [],
+              "image": "design_space_static/state_change.png",
+              "video": "videos/state_change.gif",
+              "example": "ex-068",
+              "mechanism_creator": "@kostsov",
+              "mechanism_creator_link": "https://www.instagram.com/kostsov/?g=5",
+              "order": 5
+            },
+            {
+              "id": "force-fields-particles",
+              "title": "Force Fields & Particles",
+              "description": "Motion and structure shaped by force fields, which can be electromagnetic-based, wind or\r\nabstract ones. The gravitational field is not included in this category and is classified in\r\n“Statics & Dynamics”.\r\nExamples: magnetic attraction / repulsion, wind, dust / pollen diffusion, particle movement.",
+              "details": [],
+              "video": "videos/particles.mp4",
+              "example": "ex-063",
+              "mechanism_creator": "@albacor_",
+              "mechanism_creator_link": "https://www.instagram.com/albacor_/",
+              "order": 6
+            },
+            {
+              "id": "waves-oscillations",
+              "title": "Waves & Oscillations",
+              "description": "Repeating disturbances over time, either traveling through space (waves) or cycling in place\r\n(oscillations).\r\nExamples: ripples on water, vibrating strings, springs, pulses.",
+              "details": [],
+              "video": "videos/waves.mp4",
+              "example": "ex-088",
+              "mechanism_creator": "@finnberenbroek",
+              "mechanism_creator_link": "https://www.instagram.com/finnberenbroek/?g=5",
+              "order": 7
+            },
+            {
+              "id": "optics",
+              "title": "Optics",
+              "description": "Effects arising from light–matter interaction and light transport.\r\nExamples: shadows, volumetric lighting (fog), subsurface scattering and translucency, caustics, refraction and lensing.",
+              "details": [],
+              "video": "videos/optics.mp4",
+              "example": "ex-086",
+              "mechanism_creator": "@emilsvfx",
+              "mechanism_creator_link": "https://www.instagram.com/emilsvfx/",
+              "order": 8
+            },
+            {
+              "id": "weathering",
+              "title": "Weathering",
+              "description": "Long-term alteration of surfaces and structures by environmental exposure and mechanical/chemical processes. Examples: erosion, oxidation, decomposition, frosting.",
+              "details": [],
+              "video": "videos/weathering.mp4",
+              "example": "ex-038",
+              "mechanism_creator": "@kristoffermoth",
+              "mechanism_creator_link": "https://www.instagram.com/kristoffermoth/",
+              "order": 9
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

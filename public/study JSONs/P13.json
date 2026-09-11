@@ -1,0 +1,171 @@
+{
+  "participant": "P-y9s2zk",
+  "savedAt": "2026-09-04T20:01:15.713Z",
+  "data": {
+    "level": 3,
+    "activeElement": "collection1",
+    "markConfig": {
+      "size": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "color": "#F06951",
+      "scale": 2.3,
+      "shape": "custom",
+      "material": "original",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "structural": {
+        "fluidSpeed": 1.5,
+        "deformation": "none",
+        "fluidDistort": 0.35
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "customModelUrl": "/visarmature/assets/carbon_dioxide_co2-BgUOSaIl.glb",
+      "customModelName": "carbon_dioxide_co2",
+      "customModelHasMat": true
+    },
+    "col1Config": {
+      "color": "#5E5CE6",
+      "object": null,
+      "alignAxis": "X",
+      "alignCount": 12,
+      "alignAnchor": "center",
+      "arrangement": "scattering",
+      "pilingCount": 10,
+      "scatterMode": "count",
+      "alignSpacing": 1.5,
+      "scatterCount": 50,
+      "surfaceScale": 0.4,
+      "scatterDensity": 1,
+      "scatterDimensions": {
+        "x": 4.5,
+        "y": 4,
+        "z": 3
+      },
+      "scatterShowBounds": false,
+      "scatterExcludeObject": false
+    },
+    "col2Config": {
+      "color": "#9D9BF4",
+      "alignAxis": "X",
+      "alignCount": 3,
+      "alignAnchor": "center",
+      "arrangement": "alignment",
+      "pilingCount": 10,
+      "scatterMode": "count",
+      "alignSpacing": 1,
+      "scatterCount": 30,
+      "scatterDensity": 1,
+      "scatterDimensions": {
+        "x": 20,
+        "y": 6,
+        "z": 8
+      }
+    },
+    "sceneConfig": {
+      "bgColor": "#ece2de",
+      "background": "color",
+      "hdriPreset": "city",
+      "focalLength": 152
+    },
+    "bindings": {
+      "markColor": null,
+      "collectionColor": null,
+      "markGeometry": null,
+      "scatterSize": null,
+      "scatterCount": "numerical",
+      "c1AlignCount": null,
+      "c2AlignCount": null,
+      "markSizeX": null,
+      "markSizeY": null,
+      "markSizeZ": null,
+      "markScale": null
+    },
+    "bindingDisabled": {},
+    "bindingScale": {
+      "scatterCount": 0.1
+    },
+    "markLabelConfig": {
+      "show": true,
+      "slots": {
+        "top": [],
+        "bottom": [],
+        "left": [],
+        "right": []
+      }
+    },
+    "colLabelConfig": {
+      "show": true,
+      "slots": {
+        "top": [
+          "numerical"
+        ],
+        "bottom": [
+          "categorical"
+        ],
+        "left": [],
+        "right": []
+      },
+      "bold": false,
+      "color": "#000000",
+      "fontSize": 10,
+      "italic": false
+    },
+    "decorations": [],
+    "layers": [
+      {
+        "id": "1",
+        "name": "Germany",
+        "percentage": 572.32,
+        "color": "#E63946"
+      },
+      {
+        "id": "4",
+        "name": "Brazil",
+        "percentage": 483.01,
+        "color": "#2A9D8F"
+      },
+      {
+        "id": "6",
+        "name": "Australia",
+        "percentage": 386.73,
+        "color": "#E76F51"
+      },
+      {
+        "id": "8",
+        "name": "United Kingdom",
+        "percentage": 312.91,
+        "color": "#457B9D"
+      },
+      {
+        "id": "10",
+        "name": "Qatar",
+        "percentage": 125.81,
+        "color": "#B5838D"
+      },
+      {
+        "id": "12",
+        "name": "Denmark",
+        "percentage": 24.4,
+        "color": "#A8DADC"
+      }
+    ],
+    "activeDataset": "co2Emissions",
+    "activeModelCollection": "CO2",
+    "colorMode": "distinct",
+    "colorGradient": {
+      "to": "#4488EE",
+      "from": "#EE6655"
+    },
+    "colorTint": false
+  }
+}

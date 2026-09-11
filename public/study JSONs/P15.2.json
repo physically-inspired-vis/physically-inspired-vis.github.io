@@ -1,0 +1,198 @@
+{
+  "participant": "P-y9s2zk",
+  "savedAt": "2026-09-04T20:02:28.936Z",
+  "data": {
+    "level": 2,
+    "activeElement": "scene",
+    "markConfig": {
+      "size": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "color": "#F06951",
+      "scale": 1,
+      "shape": "custom",
+      "opacity": 1,
+      "material": "plastic",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "structural": {
+        "fluidSpeed": 1.5,
+        "deformation": "none",
+        "fluidDistort": 0.35
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "customModelUrl": "/visarmature/assets/trash_bag-CTl79Ii-.glb",
+      "customModelName": "trash_bag",
+      "customModelHasMat": true
+    },
+    "col1Config": {
+      "color": "#5E5CE6",
+      "object": {
+        "id": "col1-object",
+        "name": "Object",
+        "size": {
+          "x": 5.946486136717888,
+          "y": 5.946486136717888,
+          "z": 5.946486136717888
+        },
+        "color": "#9AA0A6",
+        "shape": "custom",
+        "material": "original",
+        "position": {
+          "x": 0,
+          "y": -1.9999053412021155,
+          "z": 0
+        },
+        "structural": {
+          "fluidSpeed": 1.5,
+          "deformation": "none",
+          "fluidDistort": 0.35
+        },
+        "orientation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "customModelUrl": "/visarmature/assets/water_waves-CvRjBCxp.glb",
+        "customModelName": "water_waves",
+        "customModelHasMat": true
+      },
+      "alignAxis": "X",
+      "alignCount": 6,
+      "alignAnchor": "center",
+      "arrangement": "surface",
+      "pilingCount": 10,
+      "scatterMode": "count",
+      "alignSpacing": 1.5,
+      "scatterCount": 50,
+      "surfaceCount": 12,
+      "surfaceScale": 2.2,
+      "scatterDensity": 1,
+      "scatterDimensions": {
+        "x": 4.5,
+        "y": 4,
+        "z": 3
+      }
+    },
+    "col2Config": {
+      "color": "#9D9BF4",
+      "alignAxis": "X",
+      "alignCount": 3,
+      "alignAnchor": "center",
+      "arrangement": "alignment",
+      "pilingCount": 10,
+      "scatterMode": "count",
+      "alignSpacing": 0.5,
+      "scatterCount": 30,
+      "scatterDensity": 1,
+      "scatterDimensions": {
+        "x": 20,
+        "y": 6,
+        "z": 8
+      }
+    },
+    "sceneConfig": {
+      "background": "gradient",
+      "hdriPreset": "city",
+      "focalLength": 130,
+      "sceneTitleShow": true,
+      "sceneTitleOffset": 1.6,
+      "sceneLabelOcclude": "optimized"
+    },
+    "bindings": {
+      "markColor": "categorical",
+      "collectionColor": null,
+      "markGeometry": null,
+      "scatterSize": null,
+      "scatterCount": null,
+      "c1AlignCount": null,
+      "c2AlignCount": null,
+      "markSizeX": null,
+      "markSizeY": null,
+      "markSizeZ": null,
+      "markScale": "numerical"
+    },
+    "bindingDisabled": {},
+    "bindingScale": {},
+    "markLabelConfig": {
+      "bold": true,
+      "show": true,
+      "slots": {
+        "top": [
+          "numerical",
+          "categorical"
+        ],
+        "bottom": [],
+        "left": [],
+        "right": []
+      },
+      "distance": 0,
+      "fontSize": 14
+    },
+    "colLabelConfig": {
+      "show": false,
+      "slots": {
+        "top": [],
+        "bottom": [],
+        "left": [],
+        "right": []
+      }
+    },
+    "decorations": [],
+    "layers": [
+      {
+        "id": "1",
+        "name": "North Pacific",
+        "color": "#023E8A",
+        "percentage": 1990
+      },
+      {
+        "id": "2",
+        "name": "Indian Ocean",
+        "color": "#0077B6",
+        "percentage": 1300
+      },
+      {
+        "id": "3",
+        "name": "North Atlantic",
+        "color": "#0096C7",
+        "percentage": 930
+      },
+      {
+        "id": "4",
+        "name": "South Pacific",
+        "color": "#00B4D8",
+        "percentage": 491
+      },
+      {
+        "id": "5",
+        "name": "Mediterranean Sea",
+        "color": "#48CAE4",
+        "percentage": 247
+      },
+      {
+        "id": "6",
+        "name": "South Atlantic",
+        "color": "#90E0EF",
+        "percentage": 297
+      }
+    ],
+    "activeDataset": "oceanPlastic",
+    "activeModelCollection": "sea pollution",
+    "colorMode": "distinct",
+    "colorGradient": {
+      "to": "#4488EE",
+      "from": "#EE6655"
+    },
+    "colorTint": false
+  }
+}

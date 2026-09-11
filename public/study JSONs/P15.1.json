@@ -1,0 +1,213 @@
+{
+  "participant": "P-y9s2zk",
+  "savedAt": "2026-09-04T20:03:25.768Z",
+  "data": {
+    "level": 2,
+    "activeElement": "scene",
+    "markConfig": {
+      "size": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "color": "#F06951",
+      "parts": [
+        {
+          "id": "part_mtn2yaem_0",
+          "size": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "shape": "custom",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "material": "original",
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "customModelUrl": "/visarmature/assets/factory-Cj3v3KSg.glb",
+          "customModelName": "factory",
+          "customModelHasMat": true
+        },
+        {
+          "id": "part_mtn2yaem_1",
+          "size": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          },
+          "shape": "custom",
+          "offset": {
+            "x": 0,
+            "y": 0.06,
+            "z": 0
+          },
+          "material": "original",
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "customModelUrl": "/visarmature/assets/cloud-CJWoEHqz.glb",
+          "customModelName": "cloud",
+          "customModelHasMat": true
+        }
+      ],
+      "scale": 1,
+      "shape": "custom",
+      "material": "original",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "structural": {
+        "fluidSpeed": 1.5,
+        "deformation": "none",
+        "fluidDistort": 0.35
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "customModelUrl": "/visarmature/assets/cloud-CJWoEHqz.glb",
+      "customModelName": "cloud",
+      "customModelHasMat": true
+    },
+    "col1Config": {
+      "color": "#5E5CE6",
+      "alignAxis": "X",
+      "alignCount": 12,
+      "alignAnchor": "end",
+      "arrangement": "alignment",
+      "pilingCount": 10,
+      "scatterMode": "count",
+      "alignSpacing": 1.6,
+      "scatterCount": 50,
+      "scatterDensity": 1,
+      "scatterDimensions": {
+        "x": 4.5,
+        "y": 4,
+        "z": 3
+      }
+    },
+    "col2Config": {
+      "color": "#9D9BF4",
+      "alignAxis": "X",
+      "alignCount": 3,
+      "alignAnchor": "center",
+      "arrangement": "alignment",
+      "pilingCount": 10,
+      "scatterMode": "count",
+      "alignSpacing": 0.5,
+      "scatterCount": 30,
+      "scatterDensity": 1,
+      "scatterDimensions": {
+        "x": 20,
+        "y": 6,
+        "z": 8
+      }
+    },
+    "sceneConfig": {
+      "fog": true,
+      "grid": false,
+      "stars": false,
+      "fogFar": 175,
+      "fogNear": 4,
+      "background": "gradient",
+      "hdriPreset": "city",
+      "skyAzimuth": 91,
+      "envRotation": 0,
+      "focalLength": 146,
+      "skyElevation": 0,
+      "bgGradientTop": "#6f6c55"
+    },
+    "bindings": {
+      "markColor": null,
+      "collectionColor": null,
+      "markGeometry": null,
+      "scatterSize": null,
+      "scatterCount": null,
+      "c1AlignCount": null,
+      "c2AlignCount": null,
+      "markSizeX": null,
+      "markSizeY": null,
+      "markSizeZ": null,
+      "markScale": "numerical"
+    },
+    "bindingDisabled": {
+      "markScale": false
+    },
+    "bindingScale": {},
+    "markLabelConfig": {
+      "show": true,
+      "slots": {
+        "top": [
+          "numerical"
+        ],
+        "bottom": [
+          "categorical"
+        ],
+        "left": [],
+        "right": []
+      }
+    },
+    "colLabelConfig": {
+      "show": false,
+      "slots": {
+        "top": [],
+        "bottom": [],
+        "left": [],
+        "right": []
+      }
+    },
+    "decorations": [],
+    "layers": [
+      {
+        "id": "1",
+        "name": "Germany",
+        "color": "#E63946",
+        "percentage": 572.32
+      },
+      {
+        "id": "8",
+        "name": "United Kingdom",
+        "color": "#457B9D",
+        "percentage": 312.91
+      },
+      {
+        "id": "9",
+        "name": "France",
+        "color": "#6A4C93",
+        "percentage": 264.16
+      },
+      {
+        "id": "11",
+        "name": "Greece",
+        "color": "#1D3557",
+        "percentage": 53.36
+      },
+      {
+        "id": "12",
+        "name": "Denmark",
+        "color": "#A8DADC",
+        "percentage": 24.4
+      }
+    ],
+    "activeDataset": "co2Emissions",
+    "activeModelCollection": "CO2",
+    "colorMode": "distinct",
+    "colorGradient": {
+      "to": "#4488EE",
+      "from": "#EE6655"
+    },
+    "colorTint": false
+  }
+}
